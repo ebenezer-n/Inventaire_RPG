@@ -62,7 +62,7 @@ Si vous tapez 1, le programme vous demandera le nom, le poids et la quantité. S
 text
 Refus: depassement de 1 g (actuel 1000 g + 9001 g > max 10000 g).
 
-# 🛡️ Gestion de la Mémoire (Points clés)
+## 🛡️ Gestion de la Mémoire (Points clés)
 Le projet a été conçu pour garantir zéro fuite mémoire (critères #13, #14, #15 de la grille) :
 
 Vérification avant allocation : Le poids est calculé avant le malloc. Si l'objet est refusé, aucune mémoire n'est allouée inutilement.
@@ -77,7 +77,7 @@ bash
 valgrind --leak-check=full ./inventaire_rpg
 # Résultat attendu : "All heap blocks were freed -- no leaks are possible"
 
-# 👤 Auteur
+## 👤 Auteur
 Nom : NAMBIMAN Eben-Ezer
 
 Projet : RESET_01 - J3.B - Inventaire RPG
