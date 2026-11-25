@@ -1,4 +1,3 @@
-import pypandoc, os
 
 content = r"""# RESET_01 — J4/B : Arborescence
 
@@ -267,8 +266,3 @@ Ce README est rédigé à partir du document de consignes **« RESET_01 — J4.B
 **Projet :** RESET_01 — J4/B — Arborescence  
 **Thème :** Récursivité et fichiers texte  
 **Langage :** C
-"""
-
-out = "/mnt/data/README.md"
-pypandoc.convert_text(content, "md", format="md", outputfile=out, extra_args=["--standalone"])
-print(f"Fichier créé : {out}")
